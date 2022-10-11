@@ -1,3 +1,11 @@
+:root {
+    --face: #ffb96f;
+    --blush: rgb(243, 120, 126);
+    --real-blush: #ff8e15;
+    --eye-nose: rgb(73, 73, 73);
+    --line: rgb(90, 67, 46);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -24,7 +32,7 @@
     position: relative;
     top: 200px;
     font-size: 40px;
-    color: #ffb96f;
+    color: var(--face);
     font-weight: 800;
 }
 
@@ -39,7 +47,7 @@
 
 .face {
     position: absolute;
-    background-color: rgb(255, 188, 111);
+    background-color: var(--face);
     width: 250px;
     height: 250px;
     top: 30px;
@@ -102,7 +110,7 @@
     right: 30px;
     top: 20px;
     position: absolute;
-    background-color: rgb(243, 120, 126);
+    background-color: var(--blush);
     width: 30px;
     height: 20px;
     border-radius: 40%;
@@ -126,7 +134,7 @@
     right: 40px;
     top: 20px;
     position: absolute;
-    background-color: rgb(243, 120, 126);
+    background-color: var(--blush);
     width: 30px;
     height: 20px;
     border-radius: 40%;
@@ -150,7 +158,7 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    background-color: rgb(73, 73, 73);
+    background-color: var(--eye-nose);
     border-radius: 40%;
     box-shadow: rgba(86, 50, 93, 0.25) 0px 50px 100px -20px, rgba(175, 35, 35, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
@@ -188,7 +196,7 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    background-color: rgb(73, 73, 73);
+    background-color: var(--eye-nose);
     border-radius: 40%;
     box-shadow: rgba(86, 50, 93, 0.25) 0px 50px 100px -20px, rgba(175, 35, 35, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
@@ -225,7 +233,7 @@
     position: absolute;
     width: 40px;
     height: 25px;
-    background-color: rgb(83, 83, 83);
+    background-color: var(--eye-nose);
     border-radius: 49% 51% 52% 48% / 18% 18% 82% 82%;
     z-index: 21;
 
@@ -262,7 +270,7 @@
     width: 1px;
     height: 55px;
     background-color: black;
-    border: 3px solid rgb(90, 67, 46);
+    border: 3px solid var(--line);
     z-index: 11;
 
 }
@@ -273,8 +281,8 @@
     position: absolute;
     width: 1px;
     height: 40px;
-    background-color: rgb(90, 67, 46);
-    border: 3px solid rgb(90, 67, 46);
+    background-color: var(--line);
+    border: 3px solid var(--line);
     z-index: 11;
     transform: rotate(90deg);
 
@@ -287,8 +295,8 @@
     position: absolute;
     width: 1px;
     height: 40px;
-    background-color: rgb(90, 67, 46);
-    border: 3px solid rgb(90, 67, 46);
+    background-color: var(--line);
+    border: 3px solid var(--line);
     z-index: 11;
     transform: rotate(90deg);
 
@@ -362,7 +370,7 @@
     position: absolute;
     width: 30px;
     height: 15px;
-    background-color: #ff8e15;
+    background-color: var(--real-blush);
 }
 
 .볼터치-right {
@@ -372,7 +380,7 @@
     position: absolute;
     width: 30px;
     height: 15px;
-    background-color: #ff8e15;
+    background-color: var(--real-blush);
 }
 
 @keyframes movingleaf {
